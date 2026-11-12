@@ -1,0 +1,271 @@
+
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111111;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #191919;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #FF6B35;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF6B35;
+}
+
+/* Home Section */
+.home {
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    gap: 40px;
+}
+
+.home-text {
+    max-width: 600px;
+}
+
+.home-text h4 {
+    color: #FF6B35;
+    letter-spacing: 3px;
+}
+
+.home-text h1 {
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.home-text h1 span,
+.section h2 span {
+    color: #FF6B35;
+}
+
+.home-text h2 {
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    color: #bbbbbb;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #FF6B35;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #111111;
+}
+
+/* Profile Image */
+.profile img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border: 4px solid #FF6B35;
+    border-radius: 15px;
+}
+
+/* General Sections */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    color: #FF6B35;
+    margin: 25px 0 10px;
+}
+
+.section h4,
+.section h5,
+.section h6 {
+    margin-top: 20px;
+}
+
+.section p {
+    color: #bbbbbb;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.highlight {
+    color: #FF6B35;
+    font-weight: bold;
+}
+
+/* Skills and Hobbies */
+.content-box {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 25px auto;
+    text-align: left;
+}
+
+.content-box ul,
+.content-box ol {
+    padding-left: 25px;
+}
+
+.content-box li {
+    padding: 5px;
+    color: #cccccc;
+}
+
+/* Education Table */
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #1c1c1c;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #444444;
+    text-align: center;
+}
+
+th {
+    background-color: #FF6B35;
+    color: white;
+}
+
+td {
+    color: #cccccc;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #1c1c1c;
+    color: white;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #FF6B35;
+}
+
+button {
+    background-color: #FF6B35;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: #111111;
+}
+
+/* Footer */
+footer {
+    background-color: #191919;
+    text-align: center;
+    padding: 20px;
+    color: #999999;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 35px;
+    }
+
+    .profile img {
+        width: 220px;
+        height: 260px;
+    }
+
+    .section {
+        padding: 50px 6%;
+    }
+}
